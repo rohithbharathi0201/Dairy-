@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisanal Larder - Shop</title>
+    <!-- Google Fonts & FontAwesome for Premium Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- Premium Shared Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent"></span> DailyGrocer
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="./offers.html" class="nav-link">Offers</a>
+                <a href="./About.html" class="nav-link">About</a>
+            </nav>
+            <div class="header-actions">
+                <button class="action-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="action-btn" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+                <button class="action-btn cart-btn" aria-label="Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">5</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Intro Hero -->
+    <section class="shop-hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Curated Botanical & Agricultural Provisions</span>
+            <h1>The Daily Harvest</h1>
+            <p>Sourced responsibly from certified biodynamic farms and small-batch heritage artisans.</p>
+        </div>
+    </section>
+
+    <!-- Main Shop Container -->
+    <main class="shop-layout">
+        
+        <!-- Innovative Filtering Sidebar -->
+        <aside class="shop-sidebar">
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Categories</h3>
+                <ul class="filter-list">
+                    <li><a href="#" class="filter-item active">All Provisions <span class="count">(5)</span></a></li>
+                    <li><a href="#" class="filter-item">Citrus Orchard <span class="count">(1)</span></a></li>
+                    <li><a href="#" class="filter-item">Boutique Produce <span class="count">(2)</span></a></li>
+                    <li><a href="#" class="filter-item">Dairy & Eggs <span class="count">(1)</span></a></li>
+                    <li><a href="#" class="filter-item">Bakery & Bread <span class="count">(1)</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Harvest Attributes</h3>
+                <label class="filter-checkbox">
+                    <input type="checkbox" checked disabled>
+                    <span class="checkmark"></span> 100% Organic Certified
+                </label>
+                <label class="filter-checkbox">
+                    <input type="checkbox" checked disabled>
+                    <span class="checkmark"></span> Small-Batch / Heritage
+                </label>
+            </div>
+        </aside>
+
+        <!-- Product Grid Area -->
+        <section class="products-container">
+            <div class="grid-toolbar">
+                <p class="results-count">Showing <strong>5</strong> exceptional provisions</p>
+                <div class="sort-selector">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option>Curated Selection</option>
+                        <option>Freshness Index</option>
+                        <option>Price: Low to High</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- Product 1: Lemons -->
+                <article class="product-card">
+                    <span class="discount-badge">-15%</span>
+                    <span class="freshness-indicator"><i class="fa-solid fa-leaf"></i> 98% Freshness Index</span>
+                    <div class="product-img-holder">
+                        <img src="https://images.unsplash.com/photo-1590502593747-42a996133562?auto=format&fit=crop&w=600&q=80" alt="Premium Seedless Lemons" class="prod-fluid-img">
+                    </div>
+                    <div class="product-info">
+                        <span class="prod-cat">Citrus Orchard</span>
+                        <h2 class="prod-title">Premium Seedless Lemons</h2>
+                        <p class="prod-desc">Thick-skinned, juicy, and naturally seedless. Perfect for delicate culinary reductions and raw cold presses.</p>
+                        <div class="prod-meta">
+                            <span class="prod-price">$6.80 <span class="old-price">$8.00</span></span>
+                            <span class="prod-unit">6 Count</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> Add to Larder</button>
+                    </div>
+                </article>
+
+                <!-- Product 2: Peppers -->
+                <article class="product-card">
+                    <span class="discount-badge">-10%</span>
+                    <span class="freshness-indicator"><i class="fa-solid fa-leaf"></i> 94% Freshness Index</span>
+                    <div class="product-img-holder">
+                        <img src="https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80" alt="Heirloom Sweet Bell Peppers" class="prod-fluid-img">
+                    </div>
+                    <div class="product-info">
+                        <span class="prod-cat">Boutique Produce</span>
+                        <h2 class="prod-title">Heirloom Sweet Bell Peppers</h2>
+                        <p class="prod-desc">An artisanal medley of multi-colored volcanic soil peppers. Highly aromatic and exceptionally crisp.</p>
+                        <div class="prod-meta">
+                            <span class="prod-price">$5.40 <span class="old-price">$6.00</span></span>
+                            <span class="prod-unit">450g Assortment</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> Add to Larder</button>
+                    </div>
+                </article>
+
+                <!-- Product 3: Eggs -->
+                <article class="product-card">
+                    <span class="freshness-indicator"><i class="fa-solid fa-leaf"></i> Collected 12h ago</span>
+                    <div class="product-img-holder">
+                        <img src="https://vitalfarms.com/wp-content/uploads/2023/08/2022-02-28_Vital_Farms_Cedar_Valley_True_Blues-4625_SOCIAL_SIZE.jpg" alt="Organic Pasture Blue Eggs" class="prod-fluid-img">
+                    </div>
+                    <div class="product-info">
+                        <span class="prod-cat">Dairy & Eggs</span>
+                        <h2 class="prod-title">Organic Pasture Blue Eggs</h2>
+                        <p class="prod-desc">Naturally pastel-hued eggs from free-roaming heritage breeds. Deep amber yolks rich in clean omega-3 oils.</p>
+                        <div class="prod-meta">
+                            <span class="prod-price">$8.50</span>
+                            <span class="prod-unit">1 Dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> Add to Larder</button>
+                    </div>
+                </article>
+
+                <!-- Product 4: Sourdough -->
+                <article class="product-card">
+                    <span class="discount-badge special">Woodfired</span>
+                    <span class="freshness-indicator"><i class="fa-solid fa-fire"></i> Freshly Baked</span>
+                    <div class="product-img-holder">
+                        <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80" alt="French Sourdough Boule Loaf" class="prod-fluid-img">
+                    </div>
+                    <div class="product-info">
+                        <span class="prod-cat">Bakery & Bread</span>
+                        <h2 class="prod-title">French Sourdough Boule</h2>
+                        <p class="prod-desc">Wild-yeast slow-fermented for 36 hours. Beautifully dark, blistered, bubbly crust with a pillowy interior.</p>
+                        <div class="prod-meta">
+                            <span class="prod-price">$7.20</span>
+                            <span class="prod-unit">750g Loaf</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> Add to Larder</button>
+                    </div>
+                </article>
+
+                <!-- Product 5: Kale Matrix -->
+                <article class="product-card">
+                    <span class="freshness-indicator"><i class="fa-solid fa-leaf"></i> Hydro-Cooled</span>
+                    <div class="product-img-holder">
+                        <img src="https://images.unsplash.com/photo-1606588591319-564b8bf59a10?auto=format&fit=crop&w=600&q=80" alt="Organic Baby Kale Matrix" class="prod-fluid-img">
+                    </div>
+                    <div class="product-info">
+                        <span class="prod-cat">Boutique Produce</span>
+                        <h2 class="prod-title">Crisp Baby Kale Matrix</h2>
+                        <p class="prod-desc">A complex structural blend of curly, Lacinato, and red Russian immature greens. Tender and peppery.</p>
+                        <div class="prod-meta">
+                            <span class="prod-price">$4.95</span>
+                            <span class="prod-unit">250g Pack</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> Add to Larder</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Shared Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>The Artisanal Larder</h2>
+                <p>Redefining daily nourishment through ecological integrity and transparent sourcing models.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="shop.html">The Shop</a>
+                <a href="#">Wholesale Inquiries</a>
+                <a href="#">Farm Partnerships</a>
+            </div>
+            <div class="footer-links">
+                <h4>Guarantees</h4>
+                <a href="#">Cold-Chain Assurance</a>
+                <a href="#">Carbon-Neutral Delivery</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> &copy; 2026 The Artisanal Larder. Earth First Provisions.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

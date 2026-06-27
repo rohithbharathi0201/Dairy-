@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisanal Larder - Curated Offers</title>
+    <!-- Google Fonts & FontAwesome for Premium Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="offers.css">
+</head>
+<body>
+
+    <!-- Premium Shared Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent"></span> DailyGrocer
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="offers.html" class="nav-link active">Offers</a>
+                <a href="./About.html" class="nav-link">Our Story</a>
+            </nav>
+            <div class="header-actions">
+                <button class="action-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="action-btn" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+                <button class="action-btn cart-btn" aria-label="Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">2</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Offers Hero Header -->
+    <section class="offers-hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Seasonal Allocations & Gatherings</span>
+            <h1>Curated Larder Values</h1>
+            <p>Exceptional harvests, micro-lot yields, and collective farm shares offered with direct-to-consumer incentives.</p>
+        </div>
+    </section>
+
+    <!-- Offers Layout Section -->
+    <main class="offers-container">
+        
+        <!-- Section 1: Dynamic Vault Items (The Premium Grid) -->
+        <div class="offers-grid">
+
+            <!-- Offer 1: Seedless Lemons -->
+            <article class="offer-card">
+                <div class="offer-tag-container">
+                    <span class="badge-discount">Save 15%</span>
+                    <span class="badge-tier">Orchard Direct</span>
+                </div>
+                <div class="offer-img-holder">
+                    <img src="https://images.unsplash.com/photo-1590502593747-42a996133562?auto=format&fit=crop&w=600&q=80" alt="Premium Seedless Lemons" class="offer-fluid-img">
+                </div>
+                <div class="offer-details">
+                    <span class="offer-expiry"><i class="fa-regular fa-clock"></i> Limited Summer Allocation</span>
+                    <h2 class="offer-title">Premium Seedless Lemons (6 Pack)</h2>
+                    <p class="offer-text">An over-yielding crop from our biodynamic coastal partners lets us unlock rare vineyard-level values this week only.</p>
+                    
+                    <!-- Innovative Component: Scarcity Progress Bar -->
+                    <div class="scarcity-meter">
+                        <div class="meter-labels">
+                            <span>Harvest Allocated</span>
+                            <strong>82% Claimed</strong>
+                        </div>
+                        <div class="meter-bar"><div class="meter-progress fill-82"></div></div>
+                    </div>
+
+                    <div class="offer-price-row">
+                        <div class="price-stack">
+                            <span class="current-price">$6.80</span>
+                            <span class="was-price">Was $8.00</span>
+                        </div>
+                        <button class="claim-btn">Secure Share</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Offer 2: Heirloom Peppers -->
+            <article class="offer-card">
+                <div class="offer-tag-container">
+                    <span class="badge-discount">Save 10%</span>
+                    <span class="badge-tier">Boutique Yield</span>
+                </div>
+                <div class="offer-img-holder">
+                    <img src="https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80" alt="Heirloom Sweet Bell Peppers" class="offer-fluid-img">
+                </div>
+                <div class="offer-details">
+                    <span class="offer-expiry"><i class="fa-regular fa-clock"></i> Closes in 48 Hours</span>
+                    <h2 class="offer-title">Heirloom Sweet Bell Peppers (450g)</h2>
+                    <p class="offer-text">A beautiful mixed assortment of volcanic soil heritage peppers, curated to lower kitchen waste and balance community farms.</p>
+                    
+                    <div class="scarcity-meter">
+                        <div class="meter-labels">
+                            <span>Harvest Allocated</span>
+                            <strong>45% Claimed</strong>
+                        </div>
+                        <div class="meter-bar"><div class="meter-progress fill-45"></div></div>
+                    </div>
+
+                    <div class="offer-price-row">
+                        <div class="price-stack">
+                            <span class="current-price">$5.40</span>
+                            <span class="was-price">Was $6.00</span>
+                        </div>
+                        <button class="claim-btn">Secure Share</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Innovative Content Block: The Sustainable Co-Op Box Concept -->
+        <section class="coop-banner">
+            <div class="coop-content">
+                <span class="coop-mini-tag">Larder Innovation</span>
+                <h2>The Seasonal Subscription Box</h2>
+                <p>Unlock an ongoing **20% value deduction** across our entire estate portfolio. Combine our Organic Blue Eggs, Sourdough Boules, and fresh greens into a customized weekly shipment plan managed completely carbon-neutral.</p>
+                <div class="coop-perks">
+                    <div class="perk"><i class="fa-solid fa-truck-ramp-box"></i> Free Cold-Chain Delivery</div>
+                    <div class="perk"><i class="fa-solid fa-calendar-check"></i> Skip or Cancel Anytime</div>
+                </div>
+                <button class="coop-cta-btn">Build Your Box Layout</button>
+            </div>
+            <div class="coop-visual-placeholder">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80" alt="Artisan Sourdough" class="coop-img">
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Shared Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>The Artisanal Larder</h2>
+                <p>Redefining daily nourishment through ecological integrity and transparent sourcing models.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="shop.html">The Shop</a>
+                <a href="offers.html">Seasonal Allocations</a>
+                <a href="#">Farm Partnerships</a>
+            </div>
+            <div class="footer-links">
+                <h4>Guarantees</h4>
+                <a href="#">Cold-Chain Assurance</a>
+                <a href="#">Carbon-Neutral Delivery</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Artisanal Larder. Earth First Provisions.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
